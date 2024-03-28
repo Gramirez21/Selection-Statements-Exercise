@@ -28,6 +28,31 @@ namespace SelectionStatements
                 }
             } while (userInput != yourfavenumber);
 
+            Console.WriteLine("What is your favorite subject?");
+
+            string subject = Console.ReadLine();
+
+            switch (subject.ToLower())
+            {
+                case "math":
+                    Console.WriteLine("i love math");
+                    break;
+                case "science":
+                    Console.WriteLine("i hate math");
+                    break;
+                case "p.e":
+                    Console.WriteLine("p.e is okay i guess");
+                    break;
+                case "History":
+                    Console.WriteLine("history is fun");
+                    break;
+                case "Calculus":
+                    Console.WriteLine("well damn your smart");
+                    break;
+                default:
+                    Console.WriteLine("I dont know that subject");
+                    break;
+            }
         }
 
     }
